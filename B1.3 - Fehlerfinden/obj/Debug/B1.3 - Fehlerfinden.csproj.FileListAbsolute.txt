@@ -5,3 +5,10 @@ C:\Users\Steven\OneDrive\Desktop\SAE Projects\B1.3 - Fehlerfinden\B1.3 - Fehlerf
 C:\Users\Steven\OneDrive\Desktop\SAE Projects\B1.3 - Fehlerfinden\B1.3 - Fehlerfinden\bin\Debug\B1.3 - Fehlerfinden.pdb
 C:\Users\Steven\OneDrive\Desktop\SAE Projects\B1.3 - Fehlerfinden\B1.3 - Fehlerfinden\obj\Debug\B1.3 - Fehlerfinden.exe
 C:\Users\Steven\OneDrive\Desktop\SAE Projects\B1.3 - Fehlerfinden\B1.3 - Fehlerfinden\obj\Debug\B1.3 - Fehlerfinden.pdb
+C:\Users\lelli\Desktop\SAE Projects\B1.3---Fehlerfinden\B1.3 - Fehlerfinden\bin\Debug\B1.3 - Fehlerfinden.exe.config
+C:\Users\lelli\Desktop\SAE Projects\B1.3---Fehlerfinden\B1.3 - Fehlerfinden\bin\Debug\B1.3 - Fehlerfinden.exe
+C:\Users\lelli\Desktop\SAE Projects\B1.3---Fehlerfinden\B1.3 - Fehlerfinden\bin\Debug\B1.3 - Fehlerfinden.pdb
+C:\Users\lelli\Desktop\SAE Projects\B1.3---Fehlerfinden\B1.3 - Fehlerfinden\obj\Debug\B1.3 - Fehlerfinden.csproj.AssemblyReference.cache
+C:\Users\lelli\Desktop\SAE Projects\B1.3---Fehlerfinden\B1.3 - Fehlerfinden\obj\Debug\B1.3 - Fehlerfinden.csproj.CoreCompileInputs.cache
+C:\Users\lelli\Desktop\SAE Projects\B1.3---Fehlerfinden\B1.3 - Fehlerfinden\obj\Debug\B1.3 - Fehlerfinden.exe
+C:\Users\lelli\Desktop\SAE Projects\B1.3---Fehlerfinden\B1.3 - Fehlerfinden\obj\Debug\B1.3 - Fehlerfinden.pdb

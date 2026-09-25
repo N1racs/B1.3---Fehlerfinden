@@ -6,61 +6,62 @@ using System.Threading.Tasks;
 
 namespace B1._3___Fehlerfinden
 {
-    namespace Uebung_Debugging
+    internal class Program
     {
-        internal class Program
+        private static void Main(string[] args)
         {
-            private static void Main(string[] args)
+            int _firstRandomNumber;
+            int _secondRandomNumber; // float falsch, da Ganzzahl benötigt wird
+            Random _rng = new Random();  // is muss "=" sein
+
+            Console.WriteLine("Hallo!"); // "Goodbye!" falsch 
+
+            _firstRandomNumber = _rng.Next(0, 11); // 10 muss möglich sein darum auf 11 erhöhen
+            _secondRandomNumber = _rng.Next(0, 11); // falscher Wertebereich (0 anstatt -5)
+
+            int _sum = _firstRandomNumber + _secondRandomNumber; // "integer" falsch
+
+            if (_sum > 10) // vorher < 10
             {
-                Random _rng = new Random();
-                int _firstRandomNumber;
-                float _secondRandomNumber;
+                Console.WriteLine("The sum is greater than 10!");    //WriteLines muss "WriteLine" sein
+            }
+            else
+            {
+                Console.WriteLine("The sum is less than or equal to 10!"); // Write muss "WriteLine" sein und sum kann kleiner oder "gleich" sein
+            }
 
-                Console.WriteLine("Welcome!");
+            bool _shouldNotRepeat = false;   //wrong muss "false" sein
 
-                _firstRandomNumber = _rng.Next(0, 10);
-                _secondRandomNumber = _rng.Next(-5, 10);
+            Console.WriteLine("Do you want to add the sum and its operands? Type exactly 'Yes' or 'No':");
 
-                int _sum = _firstRandomNumber + _firstRandomNumber;
+            while (!_shouldNotRepeat)
+            {
+                string _input = Console.ReadLine();    //Readkey muss "ReadLine" sein readkey liest nur den ersten tastendruck
 
-                if (_sum < 10)
-                {
-                    Console.WriteLine("The sum is greater than 10!");
-                }
-                else
-                {
-                    Console.Write("The sum is less than 10!");
-                }
-
-                bool _shouldNotRepeat = false;
-
-                Console.WriteLine("Do you want to add the sum and it's operands? Type exactly 'Yes' or 'No'");
-
-                string _input = Console.ReadLine();
-
-                if (_input == "yes")
+                if (_input == "Yes")
                 {
                     _shouldNotRepeat = true;
+                    _sum = _sum + _firstRandomNumber + _secondRandomNumber;
                 }
-                if (_input == "N0")
+                else if (_input == "No")
                 {
-                    _shouldNotRepeat = false;
-                }
-
-                if (_shouldNotRepeat == true)
-                {
-                    _sum = _firstRandomNumber + 1000;
-                }
-                if (_sum > 51)
-                {
-                    Console.Write("The new sum is more than 200!");
+                    return;    //make _shouldNotRepeat wäre einfach _shouldNotRepeat wird aber nicht unbedingt benötigt hier
                 }
                 else
                 {
-                    Console.WriteLine("The new sum is over 9000!!!!!");
+                    Console.WriteLine("Please enter exactly 'Yes' or 'No'.");
+                    Console.WriteLine("Do you want to add the sum and its operands? Type exactly 'Yes' or 'No':");
                 }
             }
 
+            if (_sum > 15) // vorher > 51
+            {
+                Console.WriteLine("The new sum is greater than 15!");   //Write muss "WriteLine" sein
+            }
+            else // else anstatt "else do"
+            {
+                Console.WriteLine("The new sum is less than or equal to 15!");   //konsole.schreibzeile muss ""Console.WriteLine sein
+            }
         }
-    }
+    }            // { muss "}" sein
 }
